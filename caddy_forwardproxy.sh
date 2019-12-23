@@ -34,7 +34,7 @@ chmod 0770 /etc/ssl/caddy
 read -p '请输入域名：' domain
 read -p '请输入邮箱：' email
 cat > Caddyfile << EOF
-http://$domain {
+$domain {
 	forwardproxy {
 		hide_ip
 		hide_via
