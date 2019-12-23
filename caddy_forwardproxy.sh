@@ -24,7 +24,7 @@ cp caddy /usr/local/bin
 chown root:root /usr/local/bin/caddy
 chmod 755 /usr/local/bin/caddy
 apt update
-apt install libcap2-bin
+yes | apt install libcap2-bin
 setcap 'cap_net_bind_service=+ep' /usr/local/bin/caddy
 mkdir /etc/caddy
 chown -R root:root /etc/caddy
